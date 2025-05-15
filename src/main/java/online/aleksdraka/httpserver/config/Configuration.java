@@ -1,5 +1,8 @@
-﻿package online.aleksdraka.httpserver.config;
+package online.aleksdraka.httpserver.config;
 
+/**
+* Map this configuration class to the json config file
+*/
 public class Configuration {
     private int port;
     private String webroot;
