@@ -25,6 +25,7 @@ public class HttpConnectionWorkerThread extends Thread {
             inputStream = socket.getInputStream();
             outputStream = socket.getOutputStream();
 
+
             String html = """
                 <!DOCTYPE html>
                 <html>
