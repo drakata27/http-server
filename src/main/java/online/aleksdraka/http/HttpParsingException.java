@@ -1,4 +1,4 @@
-﻿package online.aleksdraka.http;
+package online.aleksdraka.http;
 
 public class HttpParsingException extends Exception {
 
