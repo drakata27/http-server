@@ -26,7 +26,7 @@ public class ServerListenerThread extends Thread {
             while (serverSocket.isBound() && !serverSocket.isClosed()) {
                 Socket socket = serverSocket.accept(); // Entity that communicates with the server socket
 
-                LOGGER.info("Accepted connection from " + socket.getInetAddress());
+                LOGGER.info("Accepted connection from {}", socket.getInetAddress());
                 HttpConnectionWorkerThread workerThread = new HttpConnectionWorkerThread(socket);
                 workerThread.start();
 
